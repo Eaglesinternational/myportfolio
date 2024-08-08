@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <!--------------fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------monosaret google font----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--------swipper js----------->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <!--------animate on scroll----------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!--------custom css----------->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------------------------NAV BAR---------------------------->
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">DANTECH</a>
+            <button class="nav__theme-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    
+<!---------------------------------FLOATING NAV BAR---------------------------->
+<menu class="floating__nav">
+    <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+    <a href="#resume"><i class="fa-solid fa-paperclip"></i></a>
+    <a href="#projects"><i class="fa-solid fa-diagram-project"></i></a>
+    <a href="#faqs"><i class="fa-solid fa-circle-question"></i></a>
+    <a href="#contact"><i class="fa-solid fa-address-book"></i></a>
+</menu>
+
+<!--------------------------------HEADER------------------------>
+<header>
+    <div class="header__container">
+        <div class="header__image" data-aos="fade-up" data-aos-delay="800">
+            <img src="./assests/myself.jpg" alt="">
+        </div>
+        <h5 data-aos="fade-in">Hi, I'm Daniel</h5>
+        <h1 data-aos="fade-in">Fullstack <span>Web Developer</span> <br> Base in Cotonou</h1>
+        <p data-aos="fade-in">
+            With over three years of experience in the industry, I specialize in building dynamic and responsive web applications. I am proficient in a variety of technologies including PHP, Laravel, Javascript, HTML, CSS and more. I am passionate about creating intuitive and user-friendly interfaces and i enjoy working on both the front-end and back-end of web development projects. My goal is to deliver high-quality, efficient, and scalable solutions that meet the unique needs of my clients.
+        </p>
+        <div class="header__cta" data-aos="fade-in">
+            <a href="#projects" class="btn my">My Projects</a>
+            <a href="#contact" class="btn primary">Hire Me</a>
+        </div>
+        <menu class="header__socials">
+            <a href="https://github.com/eaglesinternational"><i class="fa-brands fa-github"></i></a>
+            <a href="https://facebook.com/ogbonnayadanielekebuisi"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtube.com/danielogbonnaya3798"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/ekebuisi-ogbonnaya-625901a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+        </menu>
+    </div>
+</header>
+
+    <!-----------------------------RESUME----------------------------->
+    <section id="resume" class="resume" style="margin-top: 2rem;">
+        <div class="container resume__container" data-aos="fade-in" data-aos-delay="2000">
+            <div class="resume__left">
+                <h1>Why Hire Me?</h1>
+                <p>
+                    My versatility allows me to tackle both front-end and back-end challenges, ensuring seamless integration and functionality
+                </p>
+                <menu>
+                    <button class="btn experience__btn primary">Experience</button>
+                    <button class="btn education__btn">Education</button>
+                    <button class="btn skills__btn">Skills</button>
+                    <button class="btn about__btn">About me</button>
+                </menu>
+            </div>
+            <div class="resume__right">
+                
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------PROJECTS---------------------->
+
+    <section id="projects" class="projects">
+        <h1>Recent Projects</h1>
+        <p style="text-align: center; margin: 0 auto;">
+          I have had the privilege of working on several exciting projects that showcase my skills in full stack web development. each project has provided me with unique challenges and learning opportunities, allowing me to refine my abilities and deliver high-quality solutions. Below are some of the recent projects I have completed, highlighting my role, the technologies used and the outcome achieved.
+        </p>
+        <menu class="projects__categories">
+            <button class="btn my" data-filter="*">All</button>
+            <button class="btn active my" data-filter=".Frontend">Frontend</button>
+            <button class="btn active my" data-filter=".Backend">Backend</button>
+            <button class="btn active my" data-filter=".Fullstack">Fullstack</button>
+        </menu>
+
+        
+
+
+        <div class="container projects__container" data-aos="fade-in" data-aos-delay="2000">
+            <article class="project mix Backend" data-order="1">
+                <div class="project__image">
+                    <img src="/assests/project6.jpg" alt="project6">
+                </div>
+                <h5>LINKEDIN  </h5>
+                <p>
+                    This project involved creating a comprehensive replica of LinkedIn, designed to provide a professional networking platform with features similar to the original.
+                </p>
+                <div class="project__cta">
+                    <a href="https://linkedup.netlify.app/" class="btn primary" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                    <a href="" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </article>
+            <article class="project mix Frontend" data-order="2">
+                <div class="project__image">
+                    <img src="/assests/project5.jpg" alt="project5">
+                </div>
+                <h5>PORTFOLIO WEBSITE</h5>
+                <p>
+                   This project involved designing and developing a personal portfolio website to showcase my skills, experiences and projects as well as a full stack web developer.
+                </p>
+                <div class="project__cta">
+                    <a href="https://dantech.vercel.app" class="btn primary" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                    <a href="" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </article>
+            <article class="project mix Backend" data-order="3">
+                <div class="project__image">
+                    <img src="/assests/project4.jpg" alt="project4">
+                </div>
+                <h5>E-commerce</h5>
+                <p>
+                    This project focused on developing a robust and scalable e-commerce platform that provides users with a seamless online shopping experience.
+                </p>
+                <div class="project__cta">
+                    <a href="" class="btn primary" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                    <a href="" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </article>
+            <article class="project mix Frontend" data-order="4">
+                <div class="project__image">
+                    <img src="/assests/project3.jpg" alt="project3">
+                </div>
+                <h5>Dantech Blog</h5>
+                <p>
+                  This project entailed creating the front-end of a dynamic and responsive blog platform. This focus was on developing an intuitive user interface that enhances user's experience.
+                </p>
+                <div class="project__cta">
+                    <a href="https:/blogsdan.netlify.app" class="btn primary" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                    <a href="" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </article>
+            <article class="project mix Fullstack" data-order="5">
+                <div class="project__image">
+                    <img src="/assests/project2.jpg" alt="project2">
+                </div>
+                <h5>IMS COTONOU</h5>
+                <p>
+                    This project involved building a comprehensive school management system from the ground up, integrating both frontend and backend components.
+                </p>
+                <div class="project__cta">
+                    <a href="https:/ims-cotonou.com" class="btn primary" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                    <a href="" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </article>
+            <article class="project mix Fullstack" data-order="6">
+                <div class="project__image">
+                    <img src="/assests/project1.jpg" alt="project1">
+                </div>
+                <h5>HOTEL MANAGEMENT SOFTWARE</h5>
+                <p>
+                  This project focused on developing a full-featured hotel management system designed to streamline operations and enhance guest experience.
+                </p>
+                <div class="project__cta">
+                    <a href="https:/Hotel.ims-cotonou.com" class="btn primary" target="_blank"><i class="fa-solid fa-paperclip"></i></a>
+                    <a href="" class="btn" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!------------------------------TESTIMONIAL--------------------------------->
+    <section id="swipper">
+        <h1 style="text-align: center;">What my clients say</h1>
+        <p style="text-align: center;">
+           Below are what my super satisfied and excited clients have to say
+        </p>
+        <div class="container swiper">
+            <div class="swiper-wrapper">
+                <figure class="swiper-slide">
+                    <figcaption>
+                       Daniel's expertise in full stack development was instrumental in bringing our project to life. His attention to details and commitment to quality exceeded our expectations. We highly recommend him for any web development needs.
+                    </figcaption>
+                    <div class="swiper__client">
+                        <div class="swiper__client-avatar">
+                            <img src="/assests/avatar1.jpg" alt="">
+                        </div>
+                        <div class="swiper__client-details">
+                            <h5>Nana Ama McBrown</h5>
+                            <small>CEO of Tech Innovators</small>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="swiper-slide">
+                    <figcaption>
+                        Working with Daniel was a pleasure. He took time to understand our requirements and delivered a beautifully designed and highly functional e-commerce website. His professionalism and technical skills are top-notch.
+                    </figcaption>
+                    <div class="swiper__client">
+                        <div class="swiper__client-avatar">
+                            <img src="/assests/avatar2.jpg" alt="">
+                        </div>
+                        <div class="swiper__client-details">
+                            <h5>James Brown</h5>
+                            <small>Founder of ShopSmart</small>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="swiper-slide">
+                    <figcaption>
+                        Daniel transformed our outdated school management system into a modern, efficient platform. His ability to handle both front-end and back-end development was impressive and the project was completed on time and within budget.
+                    </figcaption>
+                    <div class="swiper__client">
+                        <div class="swiper__client-avatar">
+                            <img src="/assests/madam.JPG" alt="">
+                        </div>
+                        <div class="swiper__client-details">
+                            <h5>Nnena James</h5>
+                            <small>Proprietress, IMS</small>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="swiper-slide">
+                    <figcaption>
+                       The portfolio website Daniel created for me is exceptional. It's not only visually stunning but also highly functional and easy to navigate. His creativity and technical proficiency have significantly enhanced my online presence.
+                    </figcaption>
+                    <div class="swiper__client">
+                        <div class="swiper__client-avatar">
+                            <img src="/assests/avatar7.jpg" alt="">
+                        </div>
+                        <div class="swiper__client-details">
+                            <h5>Sophia Abraham</h5>
+                            <small>Freelance Designer</small>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="swiper-slide">
+                    <figcaption>
+                       Daniel's work on our hotel management software has been outstanding. The system is user-friendly and has greatly improved our operational efficiency. His responsiveness and problem-solving skills were key to the project's success.
+                    </figcaption>
+                    <div class="swiper__client">
+                        <div class="swiper__client-avatar">
+                            <img src="/assests/avatar3.jpg" alt="">
+                        </div>
+                        <div class="swiper__client-details">
+                            <h5>Sowere Abimbola</h5>
+                            <small>Manager of Luxe Hotel</small>
+                        </div>
+                    </div>
+                </figure>
+                <figure class="swiper-slide">
+                    <figcaption>
+                       I was impressed with how quickly Daniel grasped the requirements for our blog frontend. The final product is clean, responsive and exactly what we needed. His dedication and expertise are evident in the quality of his work.
+                    </figcaption>
+                    <div class="swiper__client">
+                        <div class="swiper__client-avatar">
+                            <img src="/assests/eke.jpg" alt="">
+                        </div>
+                        <div class="swiper__client-details">
+                            <h5>Daniel Ekebuisi</h5>
+                            <small>Blogger, Dantech</small>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+<!------------------------------------FAQS----------------------------->
+<section id="faqs">
+    <h1 style="text-align: center;">Frequently Asked Questions</h1>
+    <p style="text-align: center;">
+       To help you better understand my services and approach, I have compiled a list of frequently asked questions. Whether you have inquiries about my rates, availability or development process, you'll find answers to common questions here. If you need more information or have specific queries not covered here, feel free to reach out to me directly.
+    </p>
+    <menu class="container faqs__container">
+        <li class="faqs__item" data-aos="fade-in" data-aos-delay="2000">
+            <div class="faqs__item-top">
+                <span class="faqs__icon"><i class="fa-solid fa-angle-down"></i></span>
+                <h5>What's your hourly rate?</h5>
+            </div>
+            <div class="faqs__item-bottom">
+                <span></span>
+                <p>
+                  My hourly rate varies depending on the scope and complexity of the project. For a detailed quote tailored to your specific needs, please contact me directly with a description of your project requirements. I'll be happy to provide a customized estimate and discuss how I can best assist you.
+                </p>
+            </div>
+        </li>
+        <li class="faqs__item" data-aos="fade-in" data-aos-delay="2000">
+            <div class="faqs__item-top">
+                <span class="faqs__icon"><i class="fa-solid fa-angle-down"></i></span>
+                <h5>What technologies do you specialize in?</h5>
+            </div>
+            <div class="faqs__item-bottom">
+                <span></span>
+                <p>
+                   I specialize in a range of technologies including PHP, Laravel, Javascript, HTML, CSS, REACT and various front-end frameworks. My experience also include working with databases like MySQL and integrating third-party APIs. If you have specific technology requirements, feel free to ask.
+                </p>
+            </div>
+        </li>
+        <li class="faqs__item" data-aos="fade-in" data-aos-delay="4000">
+            <div class="faqs__item-top">
+                <span class="faqs__icon"><i class="fa-solid fa-angle-down"></i></span>
+                <h5>Do you work as a team?</h5>
+            </div>
+            <div class="faqs__item-bottom">
+                <span></span>
+                <p>
+                   While I primarily work as an individual, I have extensive experience collaborating with other professionals when  needed. For larger projects or those requiring specialized skills, I can assemble a team of trusted experts, including designers, front-end developers and project managers to ensure the highest quality results. If your project requires a team approach, please let me know and we can discuss the best way to meet your needs.
+                </p>
+            </div>
+        </li>
+        <li class="faqs__item" data-aos="fade-in" data-aos-delay="4000">
+            <div class="faqs__item-top">
+                <span class="faqs__icon"><i class="fa-solid fa-angle-down"></i></span>
+                <h5>How do you approach project requirementsand changes?</h5>
+            </div>
+            <div class="faqs__item-bottom">
+                <span></span>
+                <p>
+                   I begin by thoroughly understanding your project requirements through detailed discussions and documentation. If changes or new requirements arise during the project, I assess their impact and provide you with updated timelines and costs. My goal is to be flexible and accommodate changes while maintaining the project's overall quality and scope.
+                </p>
+            </div>
+        </li>
+        <li class="faqs__item" data-aos="fade-in" data-aos-delay="6000">
+            <div class="faqs__item-top">
+                <span class="faqs__icon"><i class="fa-solid fa-angle-down"></i></span>
+                <h5>How do you ensure the security of the applications you develop?</h5>
+            </div>
+            <div class="faqs__item-bottom">
+                <span></span>
+                <p>
+                    I prioritize security by implementing best practices and using secure coding techniques to protect against vulnerabilities. This includes regular security audits, data encryption and adherence to industry standards. I also stay updated on the latest security threats and patches to ensure your application remains secure.
+                </p>
+            </div>
+        </li>
+        <li class="faqs__item" data-aos="fade-in" data-aos-delay="6000">
+            <div class="faqs__item-top">
+                <span class="faqs__icon"><i class="fa-solid fa-angle-down"></i></span>
+                <h5>Are you available for collaboration?</h5>
+            </div>
+            <div class="faqs__item-bottom">
+                <span></span>
+                <p>
+                    Absolutely! I am alway open to collaborating with other developers, designers and professionals on exciting projects. Whether you need assistance with a specific part of your project or are looking to co-develop  an entire application, I am flexible and ready to discuss how we can work together to achieve your goals.
+                </p>
+            </div>
+        </li>
+    </menu>
+</section>
+
+<!-------------------------------------------CONTACT---------------------------------->
+<section id="contact">
+    <div class="container contact__container">
+        <menu class="contact__options">
+            <a href="mailto:ogbonnayadaniel095@gmail.com" target="_blank" class="contact__option">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.messenger.com/t/ogbonnayadanielekebuisi" target="_blank" class="contact__option">
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </a>
+            <a href="tel:+22967810731" target="_blank" class="contact__option">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+            <a href="https://wa.me/+2348068181974" target="_blank" class="contact__option">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </menu>
+        <form action="https://formsubmit.co/ogbonnayadaniel095@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="2000">
+            <input type="text" name="Name" placeholder="Full Name">
+            <input type="email" name="Email" placeholder="Email Address">
+            <textarea name="Message" id="" rows="7" placeholder="Message"></textarea>
+            <button type="submit" class="btn primary">Send</button>
+        </form>
+    </div>
+</section>
+
+
+    <script src="https:/unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({duration: 2000, offset: 80});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./mix/dist/mixitup.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
